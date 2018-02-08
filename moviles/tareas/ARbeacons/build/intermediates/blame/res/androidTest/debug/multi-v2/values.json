@@ -1,0 +1,57 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/gerry/tec/moviles/tareas/ARbeacons/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
+            "map": [
+                {
+                    "source": "/Users/gerry/.gradle/caches/transforms-1/files-1.1/ketchup-0.0.3.aar/11d272367f0d1d6776caab9d311b9030/res/values/values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,101,148,199",
+                        "endColumns": "45,46,50,52",
+                        "endOffsets": "96,143,194,247"
+                    }
+                },
+                {
+                    "source": "/Users/gerry/.gradle/caches/transforms-1/files-1.1/coresdk-1.3.1.aar/42f6978043b4e8cac6ff0ad7004b6dc8/res/values/values.xml",
+                    "from": {
+                        "startLines": "3,12",
+                        "startColumns": "4,4",
+                        "startOffsets": "156,899",
+                        "endLines": "3,14",
+                        "endColumns": "99,11",
+                        "endOffsets": "251,1061"
+                    },
+                    "to": {
+                        "startLines": "7,16",
+                        "startColumns": "4,4",
+                        "startOffsets": "353,1096",
+                        "endLines": "7,18",
+                        "endColumns": "99,11",
+                        "endOffsets": "448,1258"
+                    }
+                },
+                {
+                    "source": "/Users/gerry/.gradle/caches/transforms-1/files-1.1/mgmtsdk-1.4.0.aar/cf754466f29ac99e54ae87a8c0c32b5d/res/values/values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,10,11",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,156,267,349,440,523,709,799",
+                        "endLines": "2,3,4,5,6,9,10,18",
+                        "endColumns": "100,110,81,90,82,11,89,10",
+                        "endOffsets": "151,262,344,435,518,704,794,1221"
+                    },
+                    "to": {
+                        "startLines": "6,8,9,10,11,12,15,19",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "252,453,564,646,737,820,1006,1263",
+                        "endLines": "6,8,9,10,11,14,15,26",
+                        "endColumns": "100,110,81,90,82,11,89,10",
+                        "endOffsets": "348,559,641,732,815,1001,1091,1685"
+                    }
+                }
+            ]
+        }
+    ]
+}

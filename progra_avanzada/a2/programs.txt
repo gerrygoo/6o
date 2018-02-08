@@ -1,0 +1,153 @@
+// A.c------------------------------------------------------
+#include<stdio.h>
+int main(){ int i; for(i = -4; i <= 86; i += 18) printf("%d\n", i); }
+// B.c------------------------------------------------------
+#include<stdio.h>
+
+int main(){
+    int i;
+    for(i = 1; i <= 4; i++){
+        printf("2 times %d = %d\n", i, 2*i); 
+    }
+}
+// C.c------------------------------------------------------
+#include<stdio.h>
+
+int main(){
+    int c;
+    while(scanf("%d", &c) != EOF) printf("%d\n", c%1000);
+}
+// D.c------------------------------------------------------
+#include<stdio.h>
+
+int main(){
+    char c = 'u';
+    // 4 x 5
+    int i, j;
+    for(i = 0; i < 4; i++){
+        for(j = 0; j < 5; j++){
+            printf("%c", c);
+        }
+        printf("\n");
+    }
+}
+// E.c------------------------------------------------------
+#include<stdio.h>
+
+int main(){
+    int i;
+    for(i = 0; i < 40; i++) printf("-");
+    printf("\n");
+    for(i = 0; i < 10; i++) printf("_-^-");
+    printf("\n");
+    for(i = 1; i <= 10; i++) printf("%d%d", i%10, i%10);
+    for(i = 1; i <= 10; i++) printf("%d%d", i%10, i%10);
+    printf("\n");
+    for(i = 0; i < 40; i++) printf("-");
+    printf("\n");
+}
+// F.c------------------------------------------------------
+#include<stdio.h>
+
+int main(){
+    int i;
+    for(i = 1; i <= 60; i++) {
+        if( i%10 == 9 ){
+            printf("|");
+            continue;
+        }
+        printf(" ");
+    }
+    printf("\n");
+    for(i = 1; i <= 60; i++) printf("%d", i%10);
+    printf("\n");
+}
+// G.c------------------------------------------------------
+#include<stdio.h>
+
+int main(){
+    int i, j, k;
+    printf("Write nested for loops that produce the following output:\n\n\n");
+    for(k = 0; k < 3; k++){
+        for(i = 0; i < 10; i++) for(j = 0; j < 3; j++) printf("%d", i);
+        printf("\n");
+    }
+}
+// H.c------------------------------------------------------
+#include<stdio.h>
+
+int main(){int i, j;
+    for(i = 1; i < 10; i += 2){
+        for(j = 0; j < (11-i)/2 ; j++, printf("-"));
+        for(j = 0; j < i; j++, printf("%d", i));
+        for(j = 0; j < (11-i)/2 ; j++, printf("-"));
+        printf("\n");
+    }
+}
+// I.c------------------------------------------------------
+#include<stdio.h>
+
+int main(){
+    //22
+    int i, j;
+    for(i = 0; i <= 10; i += 2){
+        for(j = 0; j < i ; j++, printf("\\"));
+        for(j = 0; j < (22-2*i); j++, printf("!"));
+        for(j = 0; j < i ; j++, printf("/"));
+        printf("\n");
+    }
+}
+// J.c------------------------------------------------------
+#include<stdio.h>
+
+int main(){
+    int i, j, n, w;
+    while(scanf("%d", &n) != EOF){
+        w = -2+(n*4);
+        for(i = 0; i < n; i++){
+            for(j = 0; j < 2*i ; j++, printf("\\"));
+            for(j = 0; j < (w-4*i); j++, printf("!"));
+            for(j = 0; j < 2*i ; j++, printf("/"));
+            printf("\n");
+        }
+    }
+}
+// K.c------------------------------------------------------
+#include<stdio.h>
+
+int main(){
+    int i, j, k;
+    for(i = 0, j = 7; i <= 12 && j >= 1; i+=2, j--){
+        for(k = 0; k < i; k++, printf("*"));
+        for(k = 0; k < j; k++, printf("$"));
+        for(k = 0; k < (14-i); k++, printf("*"));
+        for(k = 0; k < j; k++, printf("$"));
+        for(k = 0; k < i; k++, printf("*"));
+        printf("\n");
+    }
+}
+
+// L.c------------------------------------------------------
+#include<stdio.h>
+
+int main(){
+    int i, n;
+    scanf("%d", &n);
+        for(i = 0; i < n; i++, printf("   /\\     ") ); printf("\n");
+        for(i = 0; i < n; i++, printf("  /  \\    ") ); printf("\n");
+        for(i = 0; i < n; i++, printf(" /    \\   ") ); printf("\n");
+        for(i = 0; i < n; i++, printf("+------+  ") ); printf("\n");
+        for(i = 0; i < n; i++, printf("|      |  ") ); printf("\n");
+        for(i = 0; i < n; i++, printf("|      |  ") ); printf("\n");
+        for(i = 0; i < n; i++, printf("+------+  ") ); printf("\n");
+        for(i = 0; i < n; i++, printf("| Viva |  ") ); printf("\n");
+        for(i = 0; i < n; i++, printf("|Mexico|  ") ); printf("\n");
+        for(i = 0; i < n; i++, printf("+------+  ") ); printf("\n");
+        for(i = 0; i < n; i++, printf("|      |  ") ); printf("\n");
+        for(i = 0; i < n; i++, printf("|      |  ") ); printf("\n");
+        for(i = 0; i < n; i++, printf("+------+  ") ); printf("\n");
+        for(i = 0; i < n; i++, printf("   /\\     ") ); printf("\n");
+        for(i = 0; i < n; i++, printf("  /  \\    ") ); printf("\n");
+        for(i = 0; i < n; i++, printf(" /    \\   ") ); printf("\n");
+}
+

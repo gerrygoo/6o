@@ -1,0 +1,56 @@
+"""Line counter for Python source files
+
+Program takes a file path and counts the LOC
+per function and in total.
+Todo:
+    * Nested function support
+"""
+import re
+from collections import defaultdict
+
+def first_non_whitespace(string):
+    return len(string) - len(string.lstrip())
+
+def count_LOC(path):
+    """Count pyhon LOC from source file.
+    Path must point to a source file.
+    Args:
+        filePath (str): The absolute or relative
+            path to the file to process.
+    Returns:
+        A tuple of the form: (total, dict)
+        dict maps function -> LOC in function
+    """
+    re_empty = re.compile(r"[\s]*(#|\n|\"\"\")")
+    re_for = re.compile(r"for.*in")
+    re_lambda = re.compile(r"lambda")
+    re_if = re.compile(r"if.*:")
+    re_def = re.compile(r"def (?P<fname>\w+)\(")
+
+    total_LOC, indent_level = 0, 0
+    cur_part = None
+    parts = defaultdict(int)
+
+    with open(path, 'r') as _file:
+        for line in filter(lambda l : not re_empty.match(l), _file):
+
+            extra = len( re_for.findall(line) ) - 1 + len( re_lambda.findall(line) ) - 1 + len( re_if.findall(line) ) -1
+
+            if extra < 0: extra = 0
+
+            total_LOC += 1 + extra
+            if cur_part:
+                parts[cur_part] += 1 + extra
+
+            defs = re_def.search(line)
+            if defs:
+                cur_part = defs.groupdict()['fname']
+                indent_level = first_non_whitespace(line)
+
+            cur_indent = first_non_whitespace(line)
+            if cur_indent < indent_level:
+                cur_part = None
+                indent_level = cur_indent
+
+    return(total_LOC, parts)
+

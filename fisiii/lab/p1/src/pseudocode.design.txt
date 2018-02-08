@@ -1,0 +1,7 @@
+implement a class for a linked list node
+
+use class to make a list filled with provided data
+
+compute measurements
+
+return measurements

@@ -1,0 +1,38 @@
+
+regular expression definitions
+
+
+def empty_or_comment(line):
+    return is "\n" or line[0] == "#"
+
+
+method_for_counting(filepath):
+    total_counter = 0
+    cur_part = None
+    indent_level = 0
+    initialize dictionary for function parts
+
+    for line in filter(file):
+    
+        total += 1
+        if cur_part: parts[cur_part] += 1
+
+        if regex finds for _ in _ or
+        finds lambda
+        or ( finds if) > 1:
+            total += 1
+            if cur_part: parts[cur_part] += 1
+
+        if regex finds def:
+            cur_part = regex_match
+            indent_level = line_indent
+
+        if line_indent < indent_level:
+            cur_part = None
+            indent_level = line_indent
+            
+            
+            
+            
+            
+            

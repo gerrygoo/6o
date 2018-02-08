@@ -1,0 +1,333 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:2:1-30:12
+MERGED from [com.estimote:sdk:1.4.1] /Users/gerry/.gradle/caches/transforms-1/files-1.1/sdk-1.4.1.aar/83e54f9914f7e1d83369f886b2ff6324/AndroidManifest.xml:2:1-14:12
+MERGED from [com.android.support:support-v4:23.1.1] /Users/gerry/.gradle/caches/transforms-1/files-1.1/support-v4-23.1.1.aar/0297f93ceb7869ffa062206bced33eb8/AndroidManifest.xml:17:1-24:12
+MERGED from [:VuforiaWrapper:] /Users/gerry/.gradle/caches/transforms-1/files-1.1/VuforiaWrapper.aar/e4f76956445f83a4a0c24c6af3b17fad/AndroidManifest.xml:2:1-27:12
+MERGED from [com.estimote:mgmtsdk:1.4.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/mgmtsdk-1.4.0.aar/cf754466f29ac99e54ae87a8c0c32b5d/AndroidManifest.xml:2:1-29:12
+MERGED from [com.estimote:management-sdk:0.3.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/management-sdk-0.3.0.aar/a385103d22fe97cc360bdc59f9ccb90f/AndroidManifest.xml:2:1-14:12
+MERGED from [com.estimote:coresdk:1.3.1] /Users/gerry/.gradle/caches/transforms-1/files-1.1/coresdk-1.3.1.aar/42f6978043b4e8cac6ff0ad7004b6dc8/AndroidManifest.xml:2:1-34:12
+MERGED from [com.estimote:ketchup:0.0.3] /Users/gerry/.gradle/caches/transforms-1/files-1.1/ketchup-0.0.3.aar/11d272367f0d1d6776caab9d311b9030/AndroidManifest.xml:2:1-15:12
+MERGED from [com.estimote:cloud-plugin:0.4.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/cloud-plugin-0.4.0.aar/58ffc628b849b0ee70ad48349fadfe6e/AndroidManifest.xml:2:1-18:12
+MERGED from [com.estimote:scanning-sdk:0.5.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/scanning-sdk-0.5.0.aar/19ea0fe778278488056633edc6bb862e/AndroidManifest.xml:2:1-25:12
+MERGED from [com.estimote:internal-plugins-api:0.6.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/internal-plugins-api-0.6.0.aar/8a9affb1733f87833ff7dfc8a77dd08f/AndroidManifest.xml:2:1-14:12
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] /Users/gerry/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.1.aar/c5b2aefd98753e375f620a27525b3438/AndroidManifest.xml:15:1-21:12
+INJECTED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:2:1-30:12
+	package
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:2:70-92
+		INJECTED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml
+		INJECTED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:2:140-165
+		INJECTED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml
+		INJECTED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:2:93-139
+	xmlns:android
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:2:166-189
+		INJECTED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml
+		INJECTED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml
+	android:installLocation
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:2:190-230
+supports-screens
+ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:3:3-163
+	android:largeScreens
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:3:78-105
+	android:smallScreens
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:3:21-48
+	android:normalScreens
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:3:49-77
+	android:xlargeScreens
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:3:106-134
+	android:anyDensity
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:3:135-160
+application
+ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:4:3-16:17
+MERGED from [com.estimote:sdk:1.4.1] /Users/gerry/.gradle/caches/transforms-1/files-1.1/sdk-1.4.1.aar/83e54f9914f7e1d83369f886b2ff6324/AndroidManifest.xml:11:5-12:19
+MERGED from [com.estimote:sdk:1.4.1] /Users/gerry/.gradle/caches/transforms-1/files-1.1/sdk-1.4.1.aar/83e54f9914f7e1d83369f886b2ff6324/AndroidManifest.xml:11:5-12:19
+MERGED from [com.android.support:support-v4:23.1.1] /Users/gerry/.gradle/caches/transforms-1/files-1.1/support-v4-23.1.1.aar/0297f93ceb7869ffa062206bced33eb8/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] /Users/gerry/.gradle/caches/transforms-1/files-1.1/support-v4-23.1.1.aar/0297f93ceb7869ffa062206bced33eb8/AndroidManifest.xml:22:5-20
+MERGED from [:VuforiaWrapper:] /Users/gerry/.gradle/caches/transforms-1/files-1.1/VuforiaWrapper.aar/e4f76956445f83a4a0c24c6af3b17fad/AndroidManifest.xml:19:5-25:19
+MERGED from [:VuforiaWrapper:] /Users/gerry/.gradle/caches/transforms-1/files-1.1/VuforiaWrapper.aar/e4f76956445f83a4a0c24c6af3b17fad/AndroidManifest.xml:19:5-25:19
+MERGED from [com.estimote:mgmtsdk:1.4.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/mgmtsdk-1.4.0.aar/cf754466f29ac99e54ae87a8c0c32b5d/AndroidManifest.xml:22:5-27:19
+MERGED from [com.estimote:mgmtsdk:1.4.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/mgmtsdk-1.4.0.aar/cf754466f29ac99e54ae87a8c0c32b5d/AndroidManifest.xml:22:5-27:19
+MERGED from [com.estimote:management-sdk:0.3.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/management-sdk-0.3.0.aar/a385103d22fe97cc360bdc59f9ccb90f/AndroidManifest.xml:11:5-12:19
+MERGED from [com.estimote:management-sdk:0.3.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/management-sdk-0.3.0.aar/a385103d22fe97cc360bdc59f9ccb90f/AndroidManifest.xml:11:5-12:19
+MERGED from [com.estimote:coresdk:1.3.1] /Users/gerry/.gradle/caches/transforms-1/files-1.1/coresdk-1.3.1.aar/42f6978043b4e8cac6ff0ad7004b6dc8/AndroidManifest.xml:22:5-32:19
+MERGED from [com.estimote:coresdk:1.3.1] /Users/gerry/.gradle/caches/transforms-1/files-1.1/coresdk-1.3.1.aar/42f6978043b4e8cac6ff0ad7004b6dc8/AndroidManifest.xml:22:5-32:19
+MERGED from [com.estimote:ketchup:0.0.3] /Users/gerry/.gradle/caches/transforms-1/files-1.1/ketchup-0.0.3.aar/11d272367f0d1d6776caab9d311b9030/AndroidManifest.xml:12:5-13:19
+MERGED from [com.estimote:ketchup:0.0.3] /Users/gerry/.gradle/caches/transforms-1/files-1.1/ketchup-0.0.3.aar/11d272367f0d1d6776caab9d311b9030/AndroidManifest.xml:12:5-13:19
+MERGED from [com.estimote:cloud-plugin:0.4.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/cloud-plugin-0.4.0.aar/58ffc628b849b0ee70ad48349fadfe6e/AndroidManifest.xml:15:5-16:19
+MERGED from [com.estimote:cloud-plugin:0.4.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/cloud-plugin-0.4.0.aar/58ffc628b849b0ee70ad48349fadfe6e/AndroidManifest.xml:15:5-16:19
+MERGED from [com.estimote:scanning-sdk:0.5.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/scanning-sdk-0.5.0.aar/19ea0fe778278488056633edc6bb862e/AndroidManifest.xml:18:5-23:19
+MERGED from [com.estimote:scanning-sdk:0.5.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/scanning-sdk-0.5.0.aar/19ea0fe778278488056633edc6bb862e/AndroidManifest.xml:18:5-23:19
+MERGED from [com.estimote:internal-plugins-api:0.6.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/internal-plugins-api-0.6.0.aar/8a9affb1733f87833ff7dfc8a77dd08f/AndroidManifest.xml:11:5-12:19
+MERGED from [com.estimote:internal-plugins-api:0.6.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/internal-plugins-api-0.6.0.aar/8a9affb1733f87833ff7dfc8a77dd08f/AndroidManifest.xml:11:5-12:19
+	android:label
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:4:92-124
+	android:debuggable
+		ADDED from [:VuforiaWrapper:] /Users/gerry/.gradle/caches/transforms-1/files-1.1/VuforiaWrapper.aar/e4f76956445f83a4a0c24c6af3b17fad/AndroidManifest.xml:19:18-44
+	android:icon
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:4:58-91
+	android:banner
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:4:147-184
+	android:theme
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:4:16-57
+	android:isGame
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:4:125-146
+activity#mx.itesm.ins.UnityPlayerActivity
+ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:5:5-11:16
+	android:screenOrientation
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:5:48-86
+	android:label
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:5:15-47
+	android:launchMode
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:5:87-118
+	android:configChanges
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:5:119-300
+	android:name
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:5:301-348
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:6:7-9:23
+action#android.intent.action.MAIN
+ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:7:9-61
+	android:name
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:7:17-58
+category#android.intent.category.LAUNCHER
+ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:8:9-69
+	android:name
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:8:19-66
+meta-data#unityplayer.UnityActivity
+ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:10:7-82
+	android:value
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:10:59-79
+	android:name
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:10:18-58
+meta-data#unity.build-id
+ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:12:5-101
+	android:value
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:12:46-98
+	android:name
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:12:16-45
+meta-data#unity.splash-mode
+ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:13:5-69
+	android:value
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:13:49-66
+	android:name
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:13:16-48
+meta-data#unity.splash-enable
+ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:14:5-74
+	android:value
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:14:51-71
+	android:name
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:14:16-50
+meta-data#android.max_aspect
+ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:15:5-72
+	android:value
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:15:50-69
+	android:name
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:15:16-49
+uses-sdk
+ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:17:3-72
+INJECTED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:17:3-72
+INJECTED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:17:3-72
+MERGED from [com.estimote:sdk:1.4.1] /Users/gerry/.gradle/caches/transforms-1/files-1.1/sdk-1.4.1.aar/83e54f9914f7e1d83369f886b2ff6324/AndroidManifest.xml:7:5-9:41
+MERGED from [com.estimote:sdk:1.4.1] /Users/gerry/.gradle/caches/transforms-1/files-1.1/sdk-1.4.1.aar/83e54f9914f7e1d83369f886b2ff6324/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:23.1.1] /Users/gerry/.gradle/caches/transforms-1/files-1.1/support-v4-23.1.1.aar/0297f93ceb7869ffa062206bced33eb8/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] /Users/gerry/.gradle/caches/transforms-1/files-1.1/support-v4-23.1.1.aar/0297f93ceb7869ffa062206bced33eb8/AndroidManifest.xml:20:5-43
+MERGED from [:VuforiaWrapper:] /Users/gerry/.gradle/caches/transforms-1/files-1.1/VuforiaWrapper.aar/e4f76956445f83a4a0c24c6af3b17fad/AndroidManifest.xml:8:5-10:41
+MERGED from [:VuforiaWrapper:] /Users/gerry/.gradle/caches/transforms-1/files-1.1/VuforiaWrapper.aar/e4f76956445f83a4a0c24c6af3b17fad/AndroidManifest.xml:8:5-10:41
+MERGED from [com.estimote:mgmtsdk:1.4.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/mgmtsdk-1.4.0.aar/cf754466f29ac99e54ae87a8c0c32b5d/AndroidManifest.xml:7:5-43
+MERGED from [com.estimote:mgmtsdk:1.4.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/mgmtsdk-1.4.0.aar/cf754466f29ac99e54ae87a8c0c32b5d/AndroidManifest.xml:7:5-43
+MERGED from [com.estimote:management-sdk:0.3.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/management-sdk-0.3.0.aar/a385103d22fe97cc360bdc59f9ccb90f/AndroidManifest.xml:7:5-9:41
+MERGED from [com.estimote:management-sdk:0.3.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/management-sdk-0.3.0.aar/a385103d22fe97cc360bdc59f9ccb90f/AndroidManifest.xml:7:5-9:41
+MERGED from [com.estimote:coresdk:1.3.1] /Users/gerry/.gradle/caches/transforms-1/files-1.1/coresdk-1.3.1.aar/42f6978043b4e8cac6ff0ad7004b6dc8/AndroidManifest.xml:7:5-43
+MERGED from [com.estimote:coresdk:1.3.1] /Users/gerry/.gradle/caches/transforms-1/files-1.1/coresdk-1.3.1.aar/42f6978043b4e8cac6ff0ad7004b6dc8/AndroidManifest.xml:7:5-43
+MERGED from [com.estimote:ketchup:0.0.3] /Users/gerry/.gradle/caches/transforms-1/files-1.1/ketchup-0.0.3.aar/11d272367f0d1d6776caab9d311b9030/AndroidManifest.xml:8:5-10:41
+MERGED from [com.estimote:ketchup:0.0.3] /Users/gerry/.gradle/caches/transforms-1/files-1.1/ketchup-0.0.3.aar/11d272367f0d1d6776caab9d311b9030/AndroidManifest.xml:8:5-10:41
+MERGED from [com.estimote:cloud-plugin:0.4.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/cloud-plugin-0.4.0.aar/58ffc628b849b0ee70ad48349fadfe6e/AndroidManifest.xml:7:5-9:41
+MERGED from [com.estimote:cloud-plugin:0.4.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/cloud-plugin-0.4.0.aar/58ffc628b849b0ee70ad48349fadfe6e/AndroidManifest.xml:7:5-9:41
+MERGED from [com.estimote:scanning-sdk:0.5.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/scanning-sdk-0.5.0.aar/19ea0fe778278488056633edc6bb862e/AndroidManifest.xml:7:5-9:41
+MERGED from [com.estimote:scanning-sdk:0.5.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/scanning-sdk-0.5.0.aar/19ea0fe778278488056633edc6bb862e/AndroidManifest.xml:7:5-9:41
+MERGED from [com.estimote:internal-plugins-api:0.6.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/internal-plugins-api-0.6.0.aar/8a9affb1733f87833ff7dfc8a77dd08f/AndroidManifest.xml:7:5-9:41
+MERGED from [com.estimote:internal-plugins-api:0.6.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/internal-plugins-api-0.6.0.aar/8a9affb1733f87833ff7dfc8a77dd08f/AndroidManifest.xml:7:5-9:41
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] /Users/gerry/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.1.aar/c5b2aefd98753e375f620a27525b3438/AndroidManifest.xml:19:5-43
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] /Users/gerry/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.1.aar/c5b2aefd98753e375f620a27525b3438/AndroidManifest.xml:19:5-43
+INJECTED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:17:3-72
+INJECTED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:17:3-72
+	android:targetSdkVersion
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:17:40-69
+		INJECTED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml
+		INJECTED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:17:13-39
+		INJECTED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml
+		INJECTED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml
+uses-feature#0x00020000
+ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:18:3-52
+	android:glEsVersion
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:18:17-49
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:19:3-95
+	android:name
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:19:20-76
+uses-permission#android.permission.INTERNET
+ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:20:3-65
+MERGED from [:VuforiaWrapper:] /Users/gerry/.gradle/caches/transforms-1/files-1.1/VuforiaWrapper.aar/e4f76956445f83a4a0c24c6af3b17fad/AndroidManifest.xml:14:5-67
+MERGED from [:VuforiaWrapper:] /Users/gerry/.gradle/caches/transforms-1/files-1.1/VuforiaWrapper.aar/e4f76956445f83a4a0c24c6af3b17fad/AndroidManifest.xml:14:5-67
+MERGED from [com.estimote:mgmtsdk:1.4.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/mgmtsdk-1.4.0.aar/cf754466f29ac99e54ae87a8c0c32b5d/AndroidManifest.xml:15:5-67
+MERGED from [com.estimote:mgmtsdk:1.4.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/mgmtsdk-1.4.0.aar/cf754466f29ac99e54ae87a8c0c32b5d/AndroidManifest.xml:15:5-67
+MERGED from [com.estimote:coresdk:1.3.1] /Users/gerry/.gradle/caches/transforms-1/files-1.1/coresdk-1.3.1.aar/42f6978043b4e8cac6ff0ad7004b6dc8/AndroidManifest.xml:15:5-67
+MERGED from [com.estimote:coresdk:1.3.1] /Users/gerry/.gradle/caches/transforms-1/files-1.1/coresdk-1.3.1.aar/42f6978043b4e8cac6ff0ad7004b6dc8/AndroidManifest.xml:15:5-67
+MERGED from [com.estimote:cloud-plugin:0.4.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/cloud-plugin-0.4.0.aar/58ffc628b849b0ee70ad48349fadfe6e/AndroidManifest.xml:12:5-67
+MERGED from [com.estimote:cloud-plugin:0.4.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/cloud-plugin-0.4.0.aar/58ffc628b849b0ee70ad48349fadfe6e/AndroidManifest.xml:12:5-67
+	android:name
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:20:20-62
+uses-permission#android.permission.CAMERA
+ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:21:3-63
+MERGED from [:VuforiaWrapper:] /Users/gerry/.gradle/caches/transforms-1/files-1.1/VuforiaWrapper.aar/e4f76956445f83a4a0c24c6af3b17fad/AndroidManifest.xml:15:5-65
+MERGED from [:VuforiaWrapper:] /Users/gerry/.gradle/caches/transforms-1/files-1.1/VuforiaWrapper.aar/e4f76956445f83a4a0c24c6af3b17fad/AndroidManifest.xml:15:5-65
+	android:name
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:21:20-60
+uses-feature#android.hardware.camera
+ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:22:3-83
+MERGED from [:VuforiaWrapper:] /Users/gerry/.gradle/caches/transforms-1/files-1.1/VuforiaWrapper.aar/e4f76956445f83a4a0c24c6af3b17fad/AndroidManifest.xml:12:5-60
+MERGED from [:VuforiaWrapper:] /Users/gerry/.gradle/caches/transforms-1/files-1.1/VuforiaWrapper.aar/e4f76956445f83a4a0c24c6af3b17fad/AndroidManifest.xml:12:5-60
+	android:required
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:22:56-80
+		MERGED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:22:56-80
+	android:name
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:22:17-55
+uses-feature#android.hardware.camera.autofocus
+ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:23:3-93
+	android:required
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:23:66-90
+	android:name
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:23:17-65
+uses-feature#android.hardware.camera.front
+ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:24:3-89
+	android:required
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:24:62-86
+	android:name
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:24:17-61
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:25:3-106
+MERGED from [:VuforiaWrapper:] /Users/gerry/.gradle/caches/transforms-1/files-1.1/VuforiaWrapper.aar/e4f76956445f83a4a0c24c6af3b17fad/AndroidManifest.xml:17:5-81
+MERGED from [:VuforiaWrapper:] /Users/gerry/.gradle/caches/transforms-1/files-1.1/VuforiaWrapper.aar/e4f76956445f83a4a0c24c6af3b17fad/AndroidManifest.xml:17:5-81
+	android:maxSdkVersion
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:25:77-103
+	android:name
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:25:20-76
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:26:3-105
+	android:maxSdkVersion
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:26:76-102
+	android:name
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:26:20-75
+uses-feature#android.hardware.touchscreen
+ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:27:3-88
+	android:required
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:27:61-85
+	android:name
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:27:17-60
+uses-feature#android.hardware.touchscreen.multitouch
+ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:28:3-99
+	android:required
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:28:72-96
+	android:name
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:28:17-71
+uses-feature#android.hardware.touchscreen.multitouch.distinct
+ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:29:3-108
+	android:required
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:29:81-105
+	android:name
+		ADDED from /Users/gerry/tec/moviles/tareas/ARbeacons/src/main/AndroidManifest.xml:29:17-80
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:VuforiaWrapper:] /Users/gerry/.gradle/caches/transforms-1/files-1.1/VuforiaWrapper.aar/e4f76956445f83a4a0c24c6af3b17fad/AndroidManifest.xml:16:5-79
+MERGED from [com.estimote:mgmtsdk:1.4.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/mgmtsdk-1.4.0.aar/cf754466f29ac99e54ae87a8c0c32b5d/AndroidManifest.xml:16:5-79
+MERGED from [com.estimote:mgmtsdk:1.4.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/mgmtsdk-1.4.0.aar/cf754466f29ac99e54ae87a8c0c32b5d/AndroidManifest.xml:16:5-79
+MERGED from [com.estimote:coresdk:1.3.1] /Users/gerry/.gradle/caches/transforms-1/files-1.1/coresdk-1.3.1.aar/42f6978043b4e8cac6ff0ad7004b6dc8/AndroidManifest.xml:16:5-79
+MERGED from [com.estimote:coresdk:1.3.1] /Users/gerry/.gradle/caches/transforms-1/files-1.1/coresdk-1.3.1.aar/42f6978043b4e8cac6ff0ad7004b6dc8/AndroidManifest.xml:16:5-79
+MERGED from [com.estimote:cloud-plugin:0.4.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/cloud-plugin-0.4.0.aar/58ffc628b849b0ee70ad48349fadfe6e/AndroidManifest.xml:13:5-79
+MERGED from [com.estimote:cloud-plugin:0.4.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/cloud-plugin-0.4.0.aar/58ffc628b849b0ee70ad48349fadfe6e/AndroidManifest.xml:13:5-79
+	android:name
+		ADDED from [:VuforiaWrapper:] /Users/gerry/.gradle/caches/transforms-1/files-1.1/VuforiaWrapper.aar/e4f76956445f83a4a0c24c6af3b17fad/AndroidManifest.xml:16:22-76
+uses-library#com.osterhoutgroup.api.ext
+ADDED from [:VuforiaWrapper:] /Users/gerry/.gradle/caches/transforms-1/files-1.1/VuforiaWrapper.aar/e4f76956445f83a4a0c24c6af3b17fad/AndroidManifest.xml:22:9-24:40
+	android:required
+		ADDED from [:VuforiaWrapper:] /Users/gerry/.gradle/caches/transforms-1/files-1.1/VuforiaWrapper.aar/e4f76956445f83a4a0c24c6af3b17fad/AndroidManifest.xml:24:13-37
+	android:name
+		ADDED from [:VuforiaWrapper:] /Users/gerry/.gradle/caches/transforms-1/files-1.1/VuforiaWrapper.aar/e4f76956445f83a4a0c24c6af3b17fad/AndroidManifest.xml:23:13-54
+uses-permission#android.permission.BLUETOOTH
+ADDED from [com.estimote:mgmtsdk:1.4.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/mgmtsdk-1.4.0.aar/cf754466f29ac99e54ae87a8c0c32b5d/AndroidManifest.xml:10:5-68
+MERGED from [com.estimote:coresdk:1.3.1] /Users/gerry/.gradle/caches/transforms-1/files-1.1/coresdk-1.3.1.aar/42f6978043b4e8cac6ff0ad7004b6dc8/AndroidManifest.xml:10:5-68
+MERGED from [com.estimote:coresdk:1.3.1] /Users/gerry/.gradle/caches/transforms-1/files-1.1/coresdk-1.3.1.aar/42f6978043b4e8cac6ff0ad7004b6dc8/AndroidManifest.xml:10:5-68
+MERGED from [com.estimote:scanning-sdk:0.5.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/scanning-sdk-0.5.0.aar/19ea0fe778278488056633edc6bb862e/AndroidManifest.xml:12:5-68
+MERGED from [com.estimote:scanning-sdk:0.5.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/scanning-sdk-0.5.0.aar/19ea0fe778278488056633edc6bb862e/AndroidManifest.xml:12:5-68
+	android:name
+		ADDED from [com.estimote:mgmtsdk:1.4.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/mgmtsdk-1.4.0.aar/cf754466f29ac99e54ae87a8c0c32b5d/AndroidManifest.xml:10:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from [com.estimote:mgmtsdk:1.4.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/mgmtsdk-1.4.0.aar/cf754466f29ac99e54ae87a8c0c32b5d/AndroidManifest.xml:11:5-74
+MERGED from [com.estimote:coresdk:1.3.1] /Users/gerry/.gradle/caches/transforms-1/files-1.1/coresdk-1.3.1.aar/42f6978043b4e8cac6ff0ad7004b6dc8/AndroidManifest.xml:11:5-74
+MERGED from [com.estimote:coresdk:1.3.1] /Users/gerry/.gradle/caches/transforms-1/files-1.1/coresdk-1.3.1.aar/42f6978043b4e8cac6ff0ad7004b6dc8/AndroidManifest.xml:11:5-74
+MERGED from [com.estimote:scanning-sdk:0.5.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/scanning-sdk-0.5.0.aar/19ea0fe778278488056633edc6bb862e/AndroidManifest.xml:13:5-74
+MERGED from [com.estimote:scanning-sdk:0.5.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/scanning-sdk-0.5.0.aar/19ea0fe778278488056633edc6bb862e/AndroidManifest.xml:13:5-74
+	android:name
+		ADDED from [com.estimote:mgmtsdk:1.4.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/mgmtsdk-1.4.0.aar/cf754466f29ac99e54ae87a8c0c32b5d/AndroidManifest.xml:11:22-71
+uses-permission-sdk-23#android.permission.ACCESS_COARSE_LOCATION
+ADDED from [com.estimote:mgmtsdk:1.4.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/mgmtsdk-1.4.0.aar/cf754466f29ac99e54ae87a8c0c32b5d/AndroidManifest.xml:13:5-88
+MERGED from [com.estimote:coresdk:1.3.1] /Users/gerry/.gradle/caches/transforms-1/files-1.1/coresdk-1.3.1.aar/42f6978043b4e8cac6ff0ad7004b6dc8/AndroidManifest.xml:13:5-88
+MERGED from [com.estimote:coresdk:1.3.1] /Users/gerry/.gradle/caches/transforms-1/files-1.1/coresdk-1.3.1.aar/42f6978043b4e8cac6ff0ad7004b6dc8/AndroidManifest.xml:13:5-88
+MERGED from [com.estimote:scanning-sdk:0.5.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/scanning-sdk-0.5.0.aar/19ea0fe778278488056633edc6bb862e/AndroidManifest.xml:16:5-88
+MERGED from [com.estimote:scanning-sdk:0.5.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/scanning-sdk-0.5.0.aar/19ea0fe778278488056633edc6bb862e/AndroidManifest.xml:16:5-88
+	android:name
+		ADDED from [com.estimote:mgmtsdk:1.4.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/mgmtsdk-1.4.0.aar/cf754466f29ac99e54ae87a8c0c32b5d/AndroidManifest.xml:13:29-85
+uses-feature#android.hardware.bluetooth_le
+ADDED from [com.estimote:mgmtsdk:1.4.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/mgmtsdk-1.4.0.aar/cf754466f29ac99e54ae87a8c0c32b5d/AndroidManifest.xml:18:5-20:36
+MERGED from [com.estimote:coresdk:1.3.1] /Users/gerry/.gradle/caches/transforms-1/files-1.1/coresdk-1.3.1.aar/42f6978043b4e8cac6ff0ad7004b6dc8/AndroidManifest.xml:18:5-20:36
+MERGED from [com.estimote:coresdk:1.3.1] /Users/gerry/.gradle/caches/transforms-1/files-1.1/coresdk-1.3.1.aar/42f6978043b4e8cac6ff0ad7004b6dc8/AndroidManifest.xml:18:5-20:36
+	android:required
+		ADDED from [com.estimote:mgmtsdk:1.4.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/mgmtsdk-1.4.0.aar/cf754466f29ac99e54ae87a8c0c32b5d/AndroidManifest.xml:20:9-33
+	android:name
+		ADDED from [com.estimote:mgmtsdk:1.4.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/mgmtsdk-1.4.0.aar/cf754466f29ac99e54ae87a8c0c32b5d/AndroidManifest.xml:19:9-53
+service#com.estimote.mgmtsdk.connection.strategy.DeviceConnectionProviderService
+ADDED from [com.estimote:mgmtsdk:1.4.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/mgmtsdk-1.4.0.aar/cf754466f29ac99e54ae87a8c0c32b5d/AndroidManifest.xml:23:9-25:40
+	android:exported
+		ADDED from [com.estimote:mgmtsdk:1.4.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/mgmtsdk-1.4.0.aar/cf754466f29ac99e54ae87a8c0c32b5d/AndroidManifest.xml:25:13-37
+	android:name
+		ADDED from [com.estimote:mgmtsdk:1.4.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/mgmtsdk-1.4.0.aar/cf754466f29ac99e54ae87a8c0c32b5d/AndroidManifest.xml:24:13-100
+service#com.estimote.mgmtsdk.repackaged.dfu_v0_6_1.no.nordicsemi.android.dfu.DfuBaseService
+ADDED from [com.estimote:mgmtsdk:1.4.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/mgmtsdk-1.4.0.aar/cf754466f29ac99e54ae87a8c0c32b5d/AndroidManifest.xml:26:9-119
+	android:name
+		ADDED from [com.estimote:mgmtsdk:1.4.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/mgmtsdk-1.4.0.aar/cf754466f29ac99e54ae87a8c0c32b5d/AndroidManifest.xml:26:18-116
+service#com.estimote.coresdk.service.BeaconService
+ADDED from [com.estimote:coresdk:1.3.1] /Users/gerry/.gradle/caches/transforms-1/files-1.1/coresdk-1.3.1.aar/42f6978043b4e8cac6ff0ad7004b6dc8/AndroidManifest.xml:23:9-25:40
+	android:exported
+		ADDED from [com.estimote:coresdk:1.3.1] /Users/gerry/.gradle/caches/transforms-1/files-1.1/coresdk-1.3.1.aar/42f6978043b4e8cac6ff0ad7004b6dc8/AndroidManifest.xml:25:13-37
+	android:name
+		ADDED from [com.estimote:coresdk:1.3.1] /Users/gerry/.gradle/caches/transforms-1/files-1.1/coresdk-1.3.1.aar/42f6978043b4e8cac6ff0ad7004b6dc8/AndroidManifest.xml:24:13-70
+activity#com.estimote.coresdk.common.requirements.DefaultRequirementsCheckerCallback$Activity
+ADDED from [com.estimote:coresdk:1.3.1] /Users/gerry/.gradle/caches/transforms-1/files-1.1/coresdk-1.3.1.aar/42f6978043b4e8cac6ff0ad7004b6dc8/AndroidManifest.xml:27:9-29:56
+	android:theme
+		ADDED from [com.estimote:coresdk:1.3.1] /Users/gerry/.gradle/caches/transforms-1/files-1.1/coresdk-1.3.1.aar/42f6978043b4e8cac6ff0ad7004b6dc8/AndroidManifest.xml:29:13-53
+	android:name
+		ADDED from [com.estimote:coresdk:1.3.1] /Users/gerry/.gradle/caches/transforms-1/files-1.1/coresdk-1.3.1.aar/42f6978043b4e8cac6ff0ad7004b6dc8/AndroidManifest.xml:28:13-112
+receiver#com.estimote.coresdk.scanning.scheduling.SystemAlarmManager$AlarmBroadcastReceiver
+ADDED from [com.estimote:coresdk:1.3.1] /Users/gerry/.gradle/caches/transforms-1/files-1.1/coresdk-1.3.1.aar/42f6978043b4e8cac6ff0ad7004b6dc8/AndroidManifest.xml:31:9-119
+	android:name
+		ADDED from [com.estimote:coresdk:1.3.1] /Users/gerry/.gradle/caches/transforms-1/files-1.1/coresdk-1.3.1.aar/42f6978043b4e8cac6ff0ad7004b6dc8/AndroidManifest.xml:31:19-116
+service#com.estimote.scanning_sdk.packet_provider.service.PacketProviderWrapperService
+ADDED from [com.estimote:scanning-sdk:0.5.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/scanning-sdk-0.5.0.aar/19ea0fe778278488056633edc6bb862e/AndroidManifest.xml:19:9-22:40
+	android:enabled
+		ADDED from [com.estimote:scanning-sdk:0.5.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/scanning-sdk-0.5.0.aar/19ea0fe778278488056633edc6bb862e/AndroidManifest.xml:21:13-35
+	android:exported
+		ADDED from [com.estimote:scanning-sdk:0.5.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/scanning-sdk-0.5.0.aar/19ea0fe778278488056633edc6bb862e/AndroidManifest.xml:22:13-37
+	android:name
+		ADDED from [com.estimote:scanning-sdk:0.5.0] /Users/gerry/.gradle/caches/transforms-1/files-1.1/scanning-sdk-0.5.0.aar/19ea0fe778278488056633edc6bb862e/AndroidManifest.xml:20:13-106

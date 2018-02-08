@@ -1,0 +1,38 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/gerry/tec/moviles/tareas/ARbeacons/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
+            "map": [
+                {
+                    "source": "/Users/gerry/tec/moviles/tareas/ARbeacons/src/main/res/values-v21/strings.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "54",
+                        "endOffsets": "105"
+                    }
+                },
+                {
+                    "source": "/Users/gerry/tec/moviles/tareas/ARbeacons/src/main/res/values-v21/styles.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "0",
+                        "startOffsets": "53",
+                        "endLines": "3",
+                        "endColumns": "8",
+                        "endOffsets": "157"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "110",
+                        "endLines": "4",
+                        "endColumns": "8",
+                        "endOffsets": "213"
+                    }
+                }
+            ]
+        }
+    ]
+}
