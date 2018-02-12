@@ -1,0 +1,14 @@
+
+log_ranges( avg, σ ):
+    return [  adequate_ranges ]
+
+
+avg = lambda x: sum(x)/len(x)
+
+σ(data):
+    sum( [adequate data] )
+
+normally_transform(data):
+    do calculations accordingly
+
+    return log_ranges( avg, σ )

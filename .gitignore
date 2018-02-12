@@ -1,7 +1,5 @@
 .vscode/
 *.pdf
 sgmm/
-
-\.DS_Store
-
 research/
+*.DS_Store

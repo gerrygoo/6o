@@ -3,9 +3,9 @@
 #include<stdlib.h>
 
 int hasMidpoint(int a, int b, int c){
-    return ((a+b)/2 == c)
-        || ((a+c)/2 == b)
-        || ((b+c)/2 == a);
+    return ( (a+b)/2 == c && !((a+b) % 2) )
+        || ( (a+c)/2 == b && !((a+c) % 2) )
+        || ( (b+c)/2 == a && !((b+c) % 2) );
 }
 
 int a, b, c;
