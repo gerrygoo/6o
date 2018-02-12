@@ -1,11 +1,23 @@
 #include<stdio.h>
 
 int a, b, c;
-int r[3];
-
 int main(){
     scanf("%d %d %d", &a, &b, &c);
-    if( a > b ){
-        
-    } 
+    //abc - cba
+    if( ((a <= b) && ( b <= c)) || ((c <= b) && ( b <= a) ) ){
+        printf("%d", b);
+        return 0;
+    }
+    
+    //bca - acb
+    if( ((b <= c) && ( c <= a)) || ((a <= c) && ( c <= b ) ) ){
+        printf("%d", c);
+        return 0;
+    }
+
+    //bac - cab
+    if( ((b <= a) && ( a <= c)) || ((c <= a) && ( a <= b ) ) ){
+        printf("%d", a);
+        return 0;
+    }
 }
