@@ -1,0 +1,51 @@
+#include<stdio.h>
+#include<limits.h>
+typedef unsigned int ui;
+
+int nth(ui x, int n){ return (x >> n)&1; }
+
+void printbits(ui n){
+    int i = (CHAR_BIT * sizeof(n))-1;
+    for(; i > -1 ; i--){
+        printf("%d", nth(n, i));
+    }
+    printf("\n");
+}
+
+ui popleft(ui *x){
+    ui tmp = x[0];
+    x[0] <<= 1;
+    return (tmp >> ((CHAR_BIT*sizeof(tmp))-1) ) & 1;;
+}
+
+ui pop(ui *x){
+    ui tmp = x[0];
+    x[0] >>= 1;
+    return tmp & 1;;
+}
+
+void push(ui *x, int n){
+    x[0] = (x[0] << 1) | n;
+}
+
+void pushleft(ui *x, int n){
+    x[0] = (x[0] >> 1) | (1 << ((CHAR_BIT*sizeof(x[0]))-1) );
+}
+
+void circularLeftShift(){
+
+}
+
+int main(){
+    ui x;
+    int n, i, bit;
+    scanf("%u %d", &x, &n);
+    for(i = 0; i < n; i++){
+        printbits(x);
+        bit = popleft(&x);
+        push(&x, bit);
+        printbits(x);
+        printf("\n");
+    }
+}
+

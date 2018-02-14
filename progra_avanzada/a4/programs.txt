@@ -1,0 +1,351 @@
+// a.c------------------------------------------------------
+#include<stdio.h>
+
+int n;
+int main(){
+    scanf("%d", &n);
+    printf("%s",
+        n & 1 ?
+        "odd\n":
+        "even\n"
+    );
+}
+
+// b.c------------------------------------------------------
+#include<stdio.h>
+#include<string.h>
+
+char s[1000];
+char max = '0', min = '9';
+int main(){
+    scanf("%s", s);
+    int i = 0;
+    if( strlen(s) == 1 ){
+        printf("%d\n", 1);
+        return 0;
+    }
+    for (; i < strlen(s); i++){
+        if ( s[i] != '-' ){
+            if (s[i] > max) max = s[i];
+            if (s[i] < min) min = s[i];
+        }
+    }
+    printf("%d\n", max-min+1);
+}
+
+// c.c------------------------------------------------------
+#include<stdio.h>
+#include<string.h>
+
+char s[1000];
+
+int main(){
+
+    while( scanf("%s", s) != EOF ){
+        int sum = 0;
+        int i = 0;
+        for (; i < strlen(s); i++){
+            if( s[i] != '-')
+                sum += s[i]-'0';
+        }
+        printf("%d\n", sum);
+    }
+    
+}
+
+// d.c------------------------------------------------------
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+
+int hasMidpoint(int a, int b, int c){
+    return ( (a+b)/2 == c && !((a+b) % 2) )
+        || ( (a+c)/2 == b && !((a+c) % 2) )
+        || ( (b+c)/2 == a && !((b+c) % 2) );
+}
+
+int a, b, c;
+int main(){
+    scanf("%d %d %d", &a, &b, &c);
+    printf(
+        hasMidpoint(a, b, c) ?
+        "true":
+        "false"
+    );
+}
+
+// e.c------------------------------------------------------
+#include<stdio.h>
+
+int n;
+int main(){
+    scanf("%d", &n);
+    printf("   1\n");
+    
+    int i = 0;
+    int j = 2;
+    for(; i < n; i++, j+=3 ){
+        printf("%d     %d\n   %d\n",
+            j, j+1, j+2
+        );
+    }
+
+}
+
+// f.c------------------------------------------------------
+#include<stdio.h>
+#include<stdlib.h>
+
+int gcd(a, b){
+    int t;
+    while(b != 0){
+        t = b; 
+        b = a % b; 
+        a = t; 
+    }
+     return a;
+}
+
+
+int main(){
+    int a, b;
+    scanf("%d %d", &a, &b);
+    printf("%d\n", gcd(abs(a), abs(b)) );
+}
+// g.c------------------------------------------------------
+#include <stdio.h>
+#include <math.h>
+
+int n;
+int main () {
+    scanf("%d", &n);
+    printf("%d = ", n);
+    while( n % 2 == 0 ){
+        n /= 2;
+        printf(" 2 *");
+    }
+    printf(" %d\n", n);
+}
+// h.c------------------------------------------------------
+#include<stdio.h>
+#include<string.h>
+
+char s[1000];
+
+int main(){
+
+    while( scanf("%s", s) != EOF ){
+        int sum = 0;
+        int i = 0;
+        for (; i < strlen(s); i++){
+            if( s[i] == '0') sum ++;
+        }
+        printf("%d\n", sum);
+    }
+    
+}
+
+// i.c------------------------------------------------------
+#include<stdio.h>
+#include<string.h>
+
+int isPerfect(int k){
+    int s = 0;
+    int i = 1;
+    for(; i < k; i++){
+        if( !(k % i) ){
+            s += i;
+        }
+    }
+    return s == k;
+}
+
+
+int main(){
+    int n;
+    scanf("%d", &n);
+    printf("Perfect numbers up to %d: ", n);
+    
+    int i = 1;
+    for(; i <= n; i++){
+        if ( isPerfect(i) ){
+            printf("%d ", i);
+        }
+    }
+
+}
+
+// j.c------------------------------------------------------
+#include<stdio.h>
+
+float x, y;
+int main(){
+        scanf("%f %f", &x, &y);
+        if(x == 0.0 || y == 0.0){
+            printf("0\n");
+            return 0;
+        }
+        if( x > 0.0 && y > 0.0){ 
+            printf("1\n");
+            return 0;
+        }
+        if( x < 0.0 && y > 0.0) {
+            printf("2\n");
+            return 0;
+        }
+        if( x < 0.0 && y < 0.0){
+             printf("3\n");
+             return 0;
+        }
+        if( x > 0.0 && y < 0.0){
+            printf("4\n");
+            return 0;
+        }
+    return 0;
+}
+
+// k.c------------------------------------------------------
+#include<stdio.h>
+
+int a, b, c;
+int main(){
+    scanf("%d %d %d", &a, &b, &c);
+
+    if ( a == b && b == c && c == a){
+        printf("equilateral\n");
+        return 0;
+    }
+
+    if ( a == b || b == c || c == a){
+        printf("isosceles\n");
+        return 0;
+    }
+
+    printf("scalene\n");
+    return 0;
+}
+
+// l.c------------------------------------------------------
+#include<stdio.h>
+
+int size;
+int main(){
+    scanf("%d", &size);
+    
+    int i = 0, j = 0;
+    for(; i < size; i++){
+        j = 0;
+        for(; j < size; j++){
+            if(j == i || j == (size-1) - i){
+                printf("x");
+            }else{
+                printf("o");
+            }
+        }
+        printf("\n");
+    }
+    printf("\n");
+}
+
+// m.c------------------------------------------------------
+#include<stdio.h>
+
+int a, b;
+int main(){
+    scanf("%d %d", &a, &b);
+    if(b > a){
+        int i = a;
+        for(; i < b; i++){
+            printf("%d ", i);
+        }
+        printf("%d\n", b);
+    }else if(a > b){
+        int i = a;
+        for(; i > b; i--){
+            printf("%d ", i);
+        }
+        printf("%d\n", b);
+    }else{
+        printf("%d\n", b);
+    }
+}
+
+// n.c------------------------------------------------------
+#include<stdio.h>
+
+int m, d;
+int main(){
+    scanf("%d %d", &m, &d);
+    if ( (m >= 12 && d >= 16) || ( m <= 3 && d <= 15 ) || m < 3 ){
+        printf("Winter\n"); return 0;
+    }
+
+    if (
+        (m == 3 && d >= 16) || (m == 6 && d <= 15) 
+        || (m > 3 && m < 6)
+    ){printf("Spring\n"); return 0;}
+
+    if (
+        (m == 6 && d >= 16) || (m == 9 && d <= 15) 
+        || (m > 6 && m < 9)
+    ){ printf("Summer\n"); return 0; }
+
+    if (
+        (m == 9 && d >= 16) || (m == 12 && d <= 15) 
+        || (m > 9 && m < 12)
+    ){ printf("Fall\n"); return 0; }
+    return 0;   
+}
+// o.c------------------------------------------------------
+#include<stdio.h>
+
+int a, b, c;
+int main(){
+    scanf("%d %d %d", &a, &b, &c);
+    //abc - cba
+    if( ((a <= b) && ( b <= c)) || ((c <= b) && ( b <= a) ) ){
+        printf("%d", b);
+        return 0;
+    }
+    
+    //bca - acb
+    if( ((b <= c) && ( c <= a)) || ((a <= c) && ( c <= b ) ) ){
+        printf("%d", c);
+        return 0;
+    }
+
+    //bac - cab
+    if( ((b <= a) && ( a <= c)) || ((c <= a) && ( a <= b ) ) ){
+        printf("%d", a);
+        return 0;
+    }
+}
+// p.c------------------------------------------------------
+#include<stdio.h>
+
+int n, s;
+int main(){
+    scanf("%d", &n);
+    int i = 1;
+    s = 1;
+    for(; i < n; i++) if (!(n%i)) s++;
+    printf("%d\n", s);
+}
+// q.c------------------------------------------------------
+#include<stdio.h>
+#include<string.h>
+
+char s[1000];
+char t;
+
+int main(){
+    scanf("%s", s);
+    int i = strlen(s)-1;
+    for(; i > 0; i-=2){
+        t = s[i];
+        s[i] = s[i-1];
+        s[i-1] = t;
+    }
+    printf("%s\n", s);
+}
+
