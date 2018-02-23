@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_consulta_isbn"
+        android:icon="@android:drawable/sym_contact_card"
+        android:title="Consulta libro" />
+
+    <item
+        android:id="@+id/navigation_enviar_drive"
+        android:icon="@android:drawable/ic_menu_upload"
+        android:title="Datos a Drive" />
+
+    <item
+        android:id="@+id/navigation_recycler"
+        android:icon="@android:drawable/ic_dialog_dialer"
+        android:title="Listar libros" />
+
+</menu>

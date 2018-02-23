@@ -116,14 +116,21 @@ public class UnityPlayerActivity extends Activity
         beaconManager.setRangingListener(new BeaconManager.BeaconRangingListener() {
             @Override
             public void onBeaconsDiscovered(BeaconRegion beaconRegion, List<Beacon> beacons) {
-                for(Beacon beacon : beacons){
-                    if(
-                            (beacon.getMajor() == 1405 && beacon.getMinor() == 57096)
-                                    || (beacon.getMajor() == 122242 && beacon.getMinor() == 1298)
-                            ){
-                        notifyy("Augmented reality is close!");
+
+                if(beacons.size() > 0){
+                    Beacon beacon = beacons[0];
+
+                    if(beacon.getMajor() == 1405 && beacon.getMinor() == 57096){
+                        Log.i("BEACON A", "found");
+                        notifyy("Augmented reality of donald trump is close!");
+                    }
+                    if(beacon.getMajor() == 122242 && beacon.getMinor() == 1298){
+                        notifyy("Augmented reality of abstract art is close!");
+                        Log.i("BEACON B", "found");
                     }
                 }
+
+
             }
         });
 
@@ -176,7 +183,7 @@ public class UnityPlayerActivity extends Activity
         beaconManager.connect(new BeaconManager.ServiceReadyCallback() {
             @Override
             public void onServiceReady() {
-                beaconManager.startMonitoring(beaconRegion);
+                beaconManager.startRanging(beaconRegion);
             }
         });
 
