@@ -1,0 +1,15 @@
+from collections import defaultdict
+
+gamma_memo = defaultdict()
+
+def gamma(n):
+    calculate using memoization
+    write into memoization if new calculation
+    return calculation
+
+def F(dof):
+    return calculation according to definition
+
+def simpsons(f):
+    while error:
+        compute

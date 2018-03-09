@@ -1,0 +1,306 @@
+// a.c------------------------------------------------------
+#include<stdio.h>
+
+int main(){
+    int n;
+    while(scanf("%d", &n) != EOF){
+        while(n--) printf("b");
+        printf("\n");
+    }
+}
+// b.c------------------------------------------------------
+#include<stdio.h>
+
+int main(){
+    double n;
+    double avg;
+    int i = 1;
+    while(scanf("%lf", &n) != EOF) avg += (n - avg)/i++;
+    printf("%.1lf\n", avg);
+
+}
+// c.c------------------------------------------------------
+#include<stdio.h>
+#define SIZE 1000000
+
+int main(){
+    int map[SIZE];
+    int n, mode, maxcount = -1;
+    scanf("%d", &mode);
+    while(scanf("%d", &n) != EOF){
+        if(++map[n] > maxcount){
+            maxcount = map[n];
+            mode = n;
+        }
+    }
+    printf("%d\n", mode);
+}
+// d.c------------------------------------------------------
+#include<stdio.h>
+#include<limits.h>
+
+int main(){
+    int n;
+    int max = -1;
+    scanf("%d");
+    while(scanf("%d", &n) != EOF){
+        if( n > max ) max = n;
+    }
+    printf("%d\n", max);
+}
+// e.c------------------------------------------------------
+#include<stdio.h>
+#include<limits.h>
+int main(){
+    int n;
+    int min = INT_MAX;
+    while(scanf("%d", &n) != EOF)
+        if( n < min ) min = n;
+    printf("%d\n", min);
+}
+// f.c------------------------------------------------------
+#include <stdio.h>
+#include <stdlib.h>
+
+void swap(int *xp, int *yp){
+    int t = *xp;
+    *xp = *yp;
+    *yp = t;
+}
+
+void sort(int *arr, int n){
+    int i, j;
+    for (i = 0; i < n - 1; i++)
+        for (j = 0; j < n - i - 1; j++)
+            if (arr[j] > arr[j + 1])
+                swap(&arr[j], &arr[j + 1]);
+}
+
+int main(){
+    int n, i;
+    scanf("%d", &n);
+    int *arr = malloc(n * sizeof(int));
+    for (i = 0; i < n; i++) scanf("%d", &arr[i]);
+
+    sort(arr, n);
+    // for (i = 0; i < n; i++) printf("%d\n", arr[i]);
+    if(!(n%2)){
+        printf("%.1lf\n", (arr[(n/2)-1] + arr[n/2])/2.0 );
+    }else{
+        printf("%.1f\n", (double)arr[(n-1)/2] );
+    }
+}
+// g.c------------------------------------------------------
+#include <stdio.h>
+#include <stdlib.h>
+
+void swap(int *xp, int *yp){
+    int t = *xp;
+    *xp = *yp;
+    *yp = t;
+}
+
+void sort(int *arr, int n){
+    int i, j;
+    for (i = 0; i < n - 1; i++)
+        for (j = 0; j < n - i - 1; j++)
+            if (arr[j] > arr[j + 1])
+                swap(&arr[j], &arr[j + 1]);
+}
+
+int main(){
+    int n, i;
+    scanf("%d", &n);
+    int *arr = malloc(n * sizeof(int));
+    for (i = 0; i < n; i++) scanf("%d", &arr[i]);
+    sort(arr, n);
+    for (i = 0; i < n; i++) printf("%d\n", arr[i]);
+}
+// h.c------------------------------------------------------
+#include<stdio.h>
+#include<stdlib.h>
+
+void swap(int *x, int *y){
+    int t = *x;
+    *x = *y;
+    *y = t;
+}
+
+void sort(int *arr, int n){
+    int i, j;
+    for (i = 0; i < n - 1; i++)
+        for (j = 0; j < n - i - 1; j++)
+            if (arr[j] > arr[j + 1])
+                swap(&arr[j], &arr[j + 1]);
+}
+
+int notBisect(int *arr, int n, int target){
+    int i = 0;
+    for(; i < n; i++){
+        if(arr[i] >= target){
+            return i;
+        }
+    }
+    return n-1;
+}
+
+int main(){
+    int n, target, i;
+    scanf("%d", &n);
+    scanf("%d", &target);
+    int *arr = malloc(n * sizeof(int));
+    for (i = 0; i < n; i++) scanf("%d", &arr[i]);
+    sort(arr, n);
+    printf("%d", notBisect(arr, n, target));
+}
+// i.c------------------------------------------------------
+#include<stdio.h>
+#include<stdlib.h>
+#include<limits.h>
+
+int main(){
+    int n, i, N;
+    int min = INT_MAX;
+    int max = INT_MIN;
+    
+    scanf("%d", &N);
+
+    for (i = 0; i < N; i++){
+        scanf("%d", &n);
+        if( n < min ){
+            min = n;
+        }
+        if( n > max ){
+            max = n;
+        }
+    };
+    printf("%d", 1+max-min);
+
+
+}
+// j.c------------------------------------------------------
+#include<stdio.h>
+#include<limits.h>
+
+int main(){
+    int n, i, N;
+    int min;
+    int max;
+    int total = 0;
+    
+    scanf("%d", &min);
+    scanf("%d", &max);
+    scanf("%d", &N);
+
+    for (i = 0; i < N; i++){
+        scanf("%d", &n);
+        if( n >= min && n <= max ) total ++;
+    };
+    printf("%d", total);
+}
+// k.c------------------------------------------------------
+#include<stdio.h>
+#include<stdlib.h>
+
+void swap(int *x, int *y){
+    int t = *x;
+    *x = *y;
+    *y = t;
+}
+
+void sort(int *arr, int n){
+    int i, j;
+    for (i = 0; i < n - 1; i++)
+        for (j = 0; j < n - i - 1; j++)
+            if (arr[j] > arr[j + 1])
+                swap(&arr[j], &arr[j + 1]);
+}
+
+int countInRange(int *arr, int n, int target){
+    int i = 0;
+    for(; i < n; i++){
+        if(arr[i] > target){
+            return i > 0 ? arr[i-1] : -1 ;
+        }
+    }
+    return -1;
+}
+
+int main(){
+    int n, target, i;
+    scanf("%d", &target);
+    scanf("%d", &n);
+
+    int *arr = malloc(n * sizeof(int));
+
+    for (i = 0; i < n; i++) scanf("%d", &arr[i]);
+
+    sort(arr, n);
+    printf("%d\n", countInRange(arr, n, target));
+}
+// l.c------------------------------------------------------
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+//assumes all positive integers
+int isMagicSquare(int** square, int n){
+    int i, j, rowSum = 0, lastRowSum = -1;
+    int* columns = malloc(n * sizeof(int));
+
+    for (i = 0; i < n; i++){
+        for (j = 0; j < n; j++){
+            rowSum += square[i][j];
+            columns[j] += square[i][j];
+        }
+        if(lastRowSum > 0 && rowSum != lastRowSum){
+            return 0;
+        }
+        lastRowSum = rowSum;
+        rowSum = 0;
+    }
+
+    for(i = 1; i < n; i++){
+        if (columns[i] != columns[i-1]) return 0;
+    }
+    
+    return 1;
+}
+
+int main(){
+    int n, i, j;
+    scanf("%d", &n);
+
+    int** arr = (int**)malloc(n * sizeof(int*));
+
+    for(i = 0; i < n; i++)
+        arr[i] = (int*)malloc(n * sizeof(int) );
+    
+
+    for (i = 0; i < n; i++)
+        for (j = 0; j < n; j++)
+            scanf("%d", &arr[i][j]);
+    
+    printf("%s", isMagicSquare(arr, n) == 1 ? "true" : "false");
+}
+// m.c------------------------------------------------------
+#include<stdio.h>
+#include<stdlib.h>
+
+typedef unsigned long long int ull;
+
+int main(){
+    ull n, i, j;
+    scanf("%llu", &n);
+
+    ull* sieve = (ull*)malloc(n * sizeof(ull));
+
+    sieve[0] = 1;
+    for (i = 2; i*i < n; i++)
+        for(j = i*i; j < n; j += i)
+            sieve[j] = 1;
+
+    for(i = 2; i < n; i++)
+        if(!sieve[i]) printf("%llu\n", i);
+}
+

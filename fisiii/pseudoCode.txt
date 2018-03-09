@@ -1,0 +1,36 @@
+error = "";
+int count = 0;
+string result;
+if(day <= 0 || 31 < day):
+	error = "Value of the day not in the range 1..31";
+	count++;
+if(month<= 0 || 12 < month):
+	error = "Value of the month not in the range 1..12";
+	count++;
+if(year <= 1811 || 2012 < year):
+	error = "Value of the year not in the range 1812..2012";
+	count++;
+
+if( count > 1 ):
+	throw error;
+if( !isEmpty(error) ):
+	throw error;
+
+if(month == 12 && day == 31):
+	result = "01-01-<year++>";
+
+if(bisiesto):
+	setDayCount(month, 29);
+
+if(day > dayCount(month)):
+	throw error;
+
+if(day == dayCount(month)):
+	result ="1-<month++>-<year>"
+
+result = "<day++>-<month>-<year>"
+
+setDayCount(month, 29);	
+
+return result;
+	

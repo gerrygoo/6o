@@ -1,0 +1,60 @@
+"""Student T.
+using simpsons rule
+use t_simpsons function.
+"""
+import math
+
+gamma_memo = {0.5: math.sqrt(math.pi), 1: 1}
+
+round_half = lambda _n: round(_n * 2) / 2
+
+def gamma(x):
+    x = round_half(x)
+    if x not in gamma_memo: gamma_memo[x] = (x-1) * gamma(x-1)   
+    return gamma_memo[x]
+
+
+def F(x, dof):
+    return (
+        ( gamma( (dof+1) / 2 ) * (( 1+( (x**2)/dof ) ) ** (-1*(dof+1)/2)) )
+        / 
+        ( ((dof*math.pi)**(1/2)) * gamma(dof/2) )
+    )
+
+def t_simpsons(x, dof, f=F, E=0.00001):
+    """Approximate T distribution values.
+    Args:
+        x: the end of the interval for integration.
+        dof: degrees of freedom for t distribution.
+        f: (optional) function for other integrations.
+        E: (optional) error goal.
+    Returns:
+        The resulting area for the t distribution curve.
+    """
+    def p_eq(_F, _x, _W, _dof, _num_seg):
+        return ((_W/3.0)
+        *(
+            _F(0, _dof) 
+            + sum( [ (4*_F(i*W, _dof)) for i in range(1, _num_seg, 2) ] )
+            + sum( [ (2*_F(i*W, _dof)) for i in range(2, _num_seg-1, 2) ] )
+            + _F(_x, _dof)
+        ))
+
+
+    num_seg = 10
+    W = x/num_seg
+    p = p_prev = 0
+
+    error = math.inf
+    c = 0
+    while error > E:
+        p_prev = p
+
+        num_seg *= 2; W /= 2
+
+        p = p_eq(f, x, W, dof, num_seg)
+        error = abs(p-p_prev)
+        c += 1
+
+    print("While happend", c, "times")
+    return p
