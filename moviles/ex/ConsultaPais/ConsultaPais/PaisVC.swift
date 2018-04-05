@@ -7,12 +7,21 @@
 //
 
 import UIKit
+import WebKit
 
 class PaisVC: UIViewController {
 
+    @IBOutlet weak var webPais: WKWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let dir = "http://en.wikipedia.org/wiki/Mexico"
+        let url = URL(string: dir)!
+        
+        let req = URLRequest(url: url)
+        
+        webPais.load(req)
         // Do any additional setup after loading the view.
     }
 
