@@ -1,0 +1,459 @@
+// a.c------------------------------------------------------
+#include<stdio.h>
+
+struct point { int x, y; };
+typedef struct point Point;
+
+int quadrant(const Point * p){
+    if(p->x == 0.0 || p->y == 0.0) return 0;
+    if( p->x > 0.0 && p->y > 0.0) return 1;
+    if( p->x < 0.0 && p->y > 0.0) return 2;
+    if( p->x < 0.0 && p->y < 0.0) return 3;
+    if( p->x > 0.0 && p->y < 0.0) return 4;
+    return -1;
+}
+
+int main(){
+    Point p;
+    scanf("%d %d", &p.x, &p.y);
+    printf("%d\n", quadrant(&p));
+}
+// b.c------------------------------------------------------
+#include<stdio.h>
+#include<math.h>
+
+struct point3 { int x, y, z; };
+typedef struct point3 Point3;
+
+long double dist(const Point3* p1, const Point3* p2){
+    return sqrt( 
+        ((p2->x - p1->x)*(p2->x - p1->x))
+        +((p2->y - p1->y)*(p2->y - p1->y))
+        +((p2->z - p1->z)*(p2->z - p1->z))
+    );
+}
+
+int main(){
+    Point3 p1, p2;
+    scanf(
+        "%d %d %d %d %d %d", 
+        &p1.x,
+        &p1.y,
+        &p1.z,
+
+        &p2.x,
+        &p2.y,
+        &p2.z
+    );
+    printf( "%.2Lf\n",  dist(&p1, &p2) );
+}
+// c.c------------------------------------------------------
+#include<stdio.h>
+
+struct point { int x, y; };
+typedef struct point Point;
+
+double slope(const Point* p1, const Point* p2){
+    return ( (double)(p2->y - p1->y) )/(p2->x - p1->x);
+}
+
+int main(){
+    Point p1, p2;
+    scanf(
+        "%d %d %d %d", 
+        &p1.x,
+        &p1.y,
+        &p2.x,
+        &p2.y
+    );
+    printf( "%.1f\n",  slope(&p1, &p2) );
+}
+// d.c------------------------------------------------------
+#include<stdio.h>
+
+struct point { int x, y; };
+typedef struct point Point;
+
+double _abs(double x){ return x < 0 ? x * -1 : x; }
+
+double slope(Point* p1, Point* p2){
+    return ( (double)(p2->y - p1->y) )/(p2->x - p1->x);
+}
+
+int areCollinear(const Point* p1, const Point* p2, const Point* p3){
+    return _abs(slope(p1, p2) - slope(p2, p3) ) < 0.001;
+}
+
+int main(){
+    Point p1, p2, p3;
+    scanf(
+        "%d %d %d %d %d %d", 
+        &p1.x,
+        &p1.y,
+
+        &p2.x,
+        &p2.y,
+
+        &p3.x,
+        &p3.y
+    );
+    printf( "%d\n",  areCollinear(&p1, &p2, &p3) );
+}
+// e.c------------------------------------------------------
+#include<stdio.h>
+#include<stdlib.h>
+
+struct fraction {
+    int nominator;
+    int denominator;
+};
+typedef struct fraction Fraction;
+
+Fraction simplifyFraction(const Fraction* fr){
+    Fraction *res = malloc( sizeof(Fraction) );
+    int a = fr -> nominator, b= fr -> denominator;
+
+    int t;
+    while(b != 0){
+        t = b; 
+        b = a % b; 
+        a = t; 
+    }
+
+    res->nominator = fr->nominator / a;
+    res->denominator = fr->denominator / a;
+    return *res;
+}
+
+int main(){
+    Fraction fr, res;
+    scanf("%d %d", &fr.nominator, &fr.denominator);
+    res = simplifyFraction(&fr);
+    printf("%d\n%d\n", res.nominator, res.denominator);
+}
+// f.c------------------------------------------------------
+#include<stdio.h>
+#include<stdlib.h>
+
+struct fraction {
+    int nominator;
+    int denominator;
+};
+typedef struct fraction Fraction;
+
+int gcd(int a, int b){
+    int t;
+    while(b != 0){
+        t = b; 
+        b = a % b; 
+        a = t; 
+    }
+    return a;
+}
+
+void simplifyFraction(Fraction* fr){
+    int _gcd = gcd(fr -> nominator, fr -> denominator);
+    fr->nominator /= _gcd;
+    fr->denominator /= _gcd;
+}
+
+Fraction sumFraction(const Fraction* cfr1, const Fraction* cfr2){
+    Fraction * res = (Fraction*)malloc( sizeof(Fraction) );
+    
+    Fraction *fr1 = cfr1, *fr2 = cfr2;
+
+    int t = fr1->denominator;
+    fr1->nominator *= fr2->denominator;
+    fr1->denominator *= fr2->denominator;
+    fr2->nominator *= t;
+    fr2->denominator *= t;
+
+    res->nominator = fr1->nominator + fr2->nominator;
+    res->denominator = fr1->denominator;
+    simplifyFraction(&res);
+    return *res;
+}
+
+int main(){
+    Fraction fr1, fr2, res;
+    scanf(
+        "%d %d %d %d",
+        &fr1.nominator, &fr1.denominator,
+        &fr2.nominator, &fr2.denominator
+    );
+    res = sumFraction(&fr1, &fr2);
+    printf("%d\n%d\n", res.nominator, res.denominator);
+}
+// g.c------------------------------------------------------
+#include<stdio.h>
+
+struct point { int x, y; };
+typedef struct point Point;
+
+void swapAndNegate(Point* p){
+    int t = -p->x;
+    p->x = -p->y;
+    p->y = t;
+}
+
+int main(){
+    Point p;
+    scanf( "%d %d", &p.x, &p.y);
+    swapAndNegate(&p);
+    printf( "%d\n%d\n", p.x, p.y );
+}
+// h.c------------------------------------------------------
+#include<stdio.h>
+
+struct rectangle { int x, y, width, height; };
+typedef struct rectangle Rectangle;
+
+struct point { int x, y; };
+typedef struct point Point;
+
+int rectangleContainsPoint(Rectangle* r, const Point* p){
+    return 
+        p->x >= r->x
+        && p->x <= (r->x + r->width)
+        &&p->y >= r->y
+        && p->y <= (r->y + r->height)
+    ;
+}
+
+int main(){
+    Rectangle r;
+    Point p;
+    scanf(
+        "%d %d %d %d %d %d", 
+        &r.x,
+        &r.y,
+        &r.width,
+        &r.height,
+        &p.x,
+        &p.y
+    );
+    printf( "%d\n",  rectangleContainsPoint(&r, &p) );
+}
+// i.c------------------------------------------------------
+#include<stdio.h>
+
+struct rectangle { int x, y, width, height; };
+typedef struct rectangle Rectangle;
+
+int max(x, y){ return x > y ? x : y; }
+int min(x, y){ return x < y ? x : y; }
+
+Rectangle rectangleUnion(const Rectangle* r1, const Rectangle* r2){
+    Rectangle* res = (Rectangle*)malloc(sizeof(Rectangle));
+    int 
+        r1_dx = r1->x+r1->width,
+        r1_dy = r1->y+r1->height,
+
+        r2_dx = r2->x+r2->width,
+        r2_dy = r2->y+r2->height
+    ;
+
+    res->x = min(r1->x, r2->x);
+    res->y = min(r1->y, r2->y);
+    res->width = max(r1_dx, r2_dx) - res->x;
+    res->height = max(r1_dy, r2_dy) - res->y;
+
+    return *res;
+}
+
+int main(){
+    Rectangle r1, r2, res;
+    scanf(
+        "%d %d %d %d %d %d %d %d", 
+        &r1.x,
+        &r1.y,
+        &r1.width,
+        &r1.height,
+        &r2.x,
+        &r2.y,
+        &r2.width,
+        &r2.height
+    );
+    res = rectangleUnion(&r1, &r2);
+    printf(
+        "%d\n%d\n%d\n%d\n", 
+        res.x,
+        res.y,
+        res.width,
+        res.height
+    );
+}
+// j.c------------------------------------------------------
+#include<stdio.h>
+
+struct rectangle { int x, y, width, height; };
+typedef struct rectangle Rectangle;
+
+int max(x, y){ return x > y ? x : y; }
+int min(x, y){ return x < y ? x : y; }
+
+Rectangle rectangleIntersection(const Rectangle* r1, const Rectangle* r2){
+    Rectangle* res = (Rectangle*)malloc(sizeof(Rectangle));
+    int 
+        r1_dx = r1->x+r1->width,
+        r1_dy = r1->y+r1->height,
+
+        r2_dx = r2->x+r2->width,
+        r2_dy = r2->y+r2->height
+    ;
+
+    res->x = max(r1->x, r2->x);
+    res->y = max(r1->y, r2->y);
+    res->width = min(r1_dx, r2_dx) - res->x;
+    res->height = min(r1_dy, r2_dy) - res->y;
+    return *res;
+}
+
+int main(){
+    Rectangle r1, r2, res;
+    scanf(
+        "%d %d %d %d %d %d %d %d", 
+        &r1.x,
+        &r1.y,
+        &r1.width,
+        &r1.height,
+        &r2.x,
+        &r2.y,
+        &r2.width,
+        &r2.height
+    );
+    res = rectangleIntersection(&r1, &r2);
+    printf(
+        "%d\n%d\n%d\n%d\n", 
+        res.x,
+        res.y,
+        res.width,
+        res.height
+    );
+}
+// k.c------------------------------------------------------
+#include<stdio.h>
+#include<stdlib.h>
+#include<limits.h>
+
+#define infinity 10000
+
+typedef enum { false, true } bool;
+
+struct point { int x, y; };
+typedef struct point Point;
+
+//colinear, clockwise, counterclockwise
+int orientation(Point* a, Point* b, Point* c){
+    int slope_difference =
+        (b->y - a->y) * (c->x - b->x)
+        - (b->x - a->x) * (c->y - b->y);
+ 
+    if (slope_difference == 0) return 0;
+    return (slope_difference > 0)? 1: 2;
+}
+
+bool p_inside_polygon(int n, const Point* polygon, const Point* p){
+    if(n < 3) return false;
+
+    int first = orientation(p, &polygon[0], &polygon[1]), next, i;
+    for(i = 1; i < n; i++){
+        next = (i+1)%n;
+        if ( orientation(p, &polygon[i], &polygon[next]) != first ) return false;
+    }
+    return true;
+}
+
+int main(){
+    int n_points, i, x, y;
+    scanf("%d", &n_points);
+
+    Point* polygon = (Point*)malloc( n_points * sizeof(Point) );
+    for(i = 0; i < n_points; i++) scanf("%d %d", &polygon[i].x, &polygon[i].y);
+
+    Point p;
+    scanf("%d %d", &p.x, &p.y);
+
+    printf("%d\n", p_inside_polygon(n_points, polygon, &p) );
+}
+// k_non_convex.c------------------------------------------------------
+#include<stdio.h>
+#include<stdlib.h>
+#include<limits.h>
+
+#define infinity 10000
+
+typedef enum { false, true } bool;
+
+struct point { int x, y; };
+typedef struct point Point;
+
+bool ordered(int a, int b, int c){ 
+    return ((a <= b) && ( b <= c)) || ((c <= b) && ( b <= a));
+}
+
+//c in segment a-b when c is colinear to a-b
+bool in_segment(Point* a, Point* b, Point* c){
+    return ordered(a->x, c->x, b->x) && ordered(a->y, c->y, b->y);
+}
+
+//colinear, clockwise, counterclockwise
+int orientation(Point* a, Point* b, Point* c){
+    int slope_difference =
+        (b->y - a->y) * (c->x - b->x)
+        - (b->x - a->x) * (c->y - b->y);
+ 
+    if (slope_difference == 0) return 0;
+    return (slope_difference > 0)? 1: 2;
+}
+
+//intersection of line segments a-b, c-d
+bool intersect(Point* a, Point* b, Point* c, Point* d){
+    int 
+        a_cd = orientation(a, c, d),
+        b_cd = orientation(b, c, d),
+        c_ab = orientation(c, a, b),
+        d_ab = orientation(d, a, b);
+    
+    return (
+        (a_cd != b_cd && c_ab != d_ab) //general case
+        //overlapping segments
+        ||( !a_cd && in_segment(c, d, b) )
+        ||( !b_cd && in_segment(c, d, a) )
+        ||( !c_ab && in_segment(a, b, d) )
+        ||( !d_ab && in_segment(a, b, c) )
+    );
+}
+
+bool p_inside_polygon(int n, Point* polygon, Point* p){
+    if(n < 3) return false;
+    
+    Point inf = {infinity, p->y};
+
+    int intersections = 0, i, next;
+    for(i = 0; i < n; i++){
+        next = (i+1)%n;
+
+        if( //count as inside if p lies on polygon side
+            !orientation(p, &polygon[i], &polygon[next]) //p is colinear to side
+            && in_segment(&polygon[i], &polygon[next], p) //p is in side
+        ) return true;
+
+        if( intersect(&polygon[i], &polygon[next], p, &inf) ) intersections++;
+    }
+    return intersections&1;
+}
+
+int main(){
+    int n_points, i, x, y;
+    scanf("%d", &n_points);
+
+    Point* polygon = (Point*)malloc( n_points * sizeof(Point) );
+    for(i = 0; i < n_points; i++) scanf("%d %d", &polygon[i].x, &polygon[i].y);
+
+    Point p;
+    scanf("%d %d", &p.x, &p.y);
+
+    printf("%d\n", p_inside_polygon(n_points, polygon, &p) );
+}
+

@@ -1,0 +1,6 @@
+
+def search_t(area, threshold):
+    state variables
+    while error > threshold:
+        integrate again
+    return value used in integration

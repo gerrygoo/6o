@@ -54,4 +54,4 @@ def count_LOC(path):
 
     return(total_LOC, parts)
 
-print( count_LOC("../p5/src/t_simpsons.py") )
+print( count_LOC("../../p6/src/t_simpsons.py") )
